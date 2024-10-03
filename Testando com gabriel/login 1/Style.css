@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://wallpapersmug.com/download/1920x1080/ec2a4d/beach-shore-blue-water-sea-waves.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes border-color-animation {
+    0% {
+        border-color: rgb(255, 255, 255);
+        /* Cor inicial */
+    }
+
+    25% {
+        border-color: rgb(0, 183, 255);
+        /* Cor intermediária 1 */
+    }
+
+    50% {
+        border-color: rgb(0, 81, 255);
+        /* Cor intermediária 2 */
+    }
+
+    75% {
+        border-color: rgb(0, 255, 255);
+        /* Cor intermediária 3 */
+    }
+
+    100% {
+        border-color: rgb(255, 255, 255);
+        /* Cor final (igual à inicial) */
+    }
+}
+
+.input-container {
+    width: 350px;
+    /* Ajuste conforme necessário */
+    background: transparent;
+    border: 4px solid rgb(183, 0, 255);
+    backdrop-filter: blur(20px);
+    border-radius: 17px;
+    padding: 10px 20px;
+    /* Reduzindo o padding */
+    animation: border-color-animation 6s infinite;
+}
+
+
+.input-container {
+    width: 420px;
+    border: 3px solid rgb(183, 0, 255);
+    backdrop-filter: blur(10px); /* O efeito de blur */
+    border-radius: 40px;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.062); /* Um fundo semi-transparente para melhor visualização do blur */
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    /* Ajuste a margem se necessário */
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    /* Ajuste a margem se necessário */
+}
+
+.input-box i {
+    position: absolute;
+    left: 15px;
+    /* Distância do ícone até a borda esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Centraliza o ícone verticalmente */
+    font-size: 20px;
+    color: rgba(255, 255, 255, .5);
+    /* Cor do ícone */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    /* Fundo sólido preto com 70% de opacidade */
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px 0 45px;
+    position: relative;
+    z-index: 1;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    /* Remove a linha embaixo do link */
+    color: #fff;
+    /* Cor do texto */
+    font-size: 17px;
+    /* Tamanho da fonte */
+    font-weight: 700;
+    /* Negrito */
+    cursor: pointer;
+}
+
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.submit-buttom {
+    text-align: center;
+    margin: 20px 0px
+}
+
+.submit-buttom {
+    width: 350px;
+    height: 40px;
+    background-color: hsl(32, 100%, 50%);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 17px;
+}
+
+.submit-buttom:hover {
+    background-color: #c202e9;
+}
+
+.register-link p {
+    font-size: 16px;
+    color: #fff;
+    /* Cor do texto do parágrafo */
+    text-align: center;
+    margin-top: 20px;
+    /* Ajuste o espaçamento como preferir */
+}
+
+.register-link p a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
